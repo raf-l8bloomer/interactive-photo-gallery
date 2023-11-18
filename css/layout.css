@@ -1,11 +1,35 @@
+body {
+    max-width: 100%;
+}
+
 .gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     grid-template-rows: auto;
-    grid-gap: 10px
+    grid-auto-columns: repeat(4, minmax(280px, 1fr));
+    grid-gap: 30px;
+    margin: 2em 5em;
 }
 
 a {
     display: flex;
     flex-direction: column;
+}
+
+.input-container {
+    display: flex;
+}
+
+.search {
+    margin: auto;
+    width: 80%;
+    height: 4rem;
+    display: inline-block;
+    border: 1px #ccc solid;
+    border-radius: 10px;
+}
+
+input::placeholder {
+    padding: 1em;
+    color: #ccc;
 }
